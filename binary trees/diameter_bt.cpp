@@ -1,0 +1,1 @@
+// Check the code we just have to find diameter= max(diameter,lh +rh) in the max depth code
