@@ -9,17 +9,18 @@ void bfs(int start, vector<vector<int>> adj, int n)
     vector<int> visited(n + 1, 0);
     queue<int> q;
     q.push(start);
+    visited[start] = 1;
     while (!q.empty())
     {
         int temp = q.front();
         q.pop();
         cout << temp << " ";
-        visited[start] = 1;
+
         for (auto it : adj[temp])
         {
             if (!visited[it])
             {
-                visited[it]=1;
+                visited[it] = 1;
                 q.push(it);
             }
         }

@@ -14,14 +14,14 @@ bool detect(int src, vector<int> adj[], int vis[])
         int node= q.front().first;
         int parent = q.front().second;
         q.pop();
-        for(auto adjacentNode : adj[node])
+        for(auto it : adj[node])
         {
-            if(!vis[adjacentNode])
+            if(!vis[it])
             {
-                vis[adjacentNode]=1;
-                q.push({adjacentNode, node});
+                vis[it]=1;
+                q.push({it, node});
             }
-            else if(parent!=adjacentNode)
+            else if(parent!=it)
             {
                   return true;
             }
