@@ -45,7 +45,7 @@ Node* add2(Node* head1, Node* head2)
   Node* current=dummy;
   int carry=0;
   while(t1!=0 || t2!=0)
-  { int sum=0;
+  {   int sum=0;
       sum+=carry;
       if(t1) sum=sum+t1->data;
       if(t2) sum=sum+t2->data;
@@ -54,7 +54,7 @@ Node* add2(Node* head1, Node* head2)
 
       current->next=newnode;
       current=current->next;
-
+                           
       if(t1) t1=t1->next;
       if(t2) t2=t2->next;
       

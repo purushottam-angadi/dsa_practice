@@ -10,7 +10,7 @@
 //     while(r<arr.size())
 //     {
 //         sum+= arr[r];
-//         while (sum>goal)
+//         if (sum>goal)
 //         {
 //            sum=sum-arr[l];
 //            l=l+1;
@@ -74,14 +74,12 @@ int answer(vector<int> &arr, int goal)
     return (find(arr,goal) - find(arr, goal-1));
 }
 
-
-
-
 int main()
-{
+{ 
    vector<int> arr={1,0,0,1,1,0};
    int goal=2;
    int result=answer(arr,goal);
    cout<<result<<endl;
-
 }
+
+

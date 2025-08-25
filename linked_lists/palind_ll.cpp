@@ -87,8 +87,8 @@ Node* convertarrtoll(vector<int> &arr)
 
 bool pali(Node *head)
 {
-Node* slow = head;
-    Node* fast = head;
+   Node* slow = head;
+   Node* fast = head;
     
     // Traverse the linked list to find the
     // middle using slow and fast pointers
@@ -103,7 +103,8 @@ Node* slow = head;
     Node * newhead=reversell(slow->next);
     Node* first=head;
     Node* second=newhead;
-    while (second != NULL) {
+    while (second != NULL) 
+    {
         
         // Compare data values of 
         // nodes from both halves

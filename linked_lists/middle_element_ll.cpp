@@ -61,8 +61,9 @@ Node* convertarrtoll(vector<int> &arr)
 //     }
 int middle(Node* head)
 {
+
   Node *slow = head; 
-   Node *fast = head; 
+  Node *fast = head; 
   while (fast != NULL && fast->next != NULL) {
        
         slow = slow->next; 
@@ -83,6 +84,5 @@ int main()
 
     int answer= middle(head);
     cout<<answer<<endl;
-   
 
 }

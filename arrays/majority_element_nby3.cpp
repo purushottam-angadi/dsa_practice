@@ -43,7 +43,7 @@ vector<int> majority(vector<int> &arr)
         {
             count1++;
         }
-         if (arr[i] == el2)
+        if (arr[i] == el2)
         {
             count2++;
         }

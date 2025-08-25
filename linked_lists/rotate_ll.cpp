@@ -8,15 +8,16 @@ struct ListNode {
 };
 
 ListNode* rotateRight(ListNode* head, int k) {
-    if (!head || !head->next || k == 0) return head;
-
-    // Compute the length of the list
-    ListNode* temp = head;
+        ListNode* temp = head;
     int len = 1;
     while (temp->next) {
         temp = temp->next;
         len++;
     }
+
+    if (!head || !head->next || k%len == 0) return head;
+
+    // Compute the length of the list
 
     // Make it circular
     temp->next = head;
